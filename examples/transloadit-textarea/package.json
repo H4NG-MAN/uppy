@@ -10,7 +10,7 @@
     "browserify": "^16.2.3",
     "drag-drop": "^4.2.0",
     "ecstatic": "^3.0.0",
-    "marked": "^0.6.0"
+    "marked": "^0.7.0"
   },
   "private": true,
   "scripts": {
