@@ -66,7 +66,8 @@
     "@uppy/webcam": "file:packages/@uppy/webcam",
     "@uppy/xhr-upload": "file:packages/@uppy/xhr-upload",
     "uppy": "file:packages/uppy",
-    "uppy.io": "file:website"
+    "uppy.io": "file:website",
+    "snyk": "^1.299.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -235,7 +236,9 @@
     "web:inject-frontpagecodesample": "npm run web:generate && cp -f website/public/frontpage-code-sample.html website/themes/uppy/layout/partials/frontpage-code-sample.html && touch website/themes/uppy/layout/index.ejs",
     "web:start": "npm-run-all build:lib --parallel watch:css web:watch-examples web:bundle-watch-inject web:watch",
     "web:watch-examples": "cd website && node build-examples.js watch",
-    "web:watch": "cd website && touch db.json && ../node_modules/.bin/hexo server"
+    "web:watch": "cd website && touch db.json && ../node_modules/.bin/hexo server",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "automock": false,
@@ -246,5 +249,6 @@
     "testMatch": [
       "**/packages/**/*.test.js"
     ]
-  }
+  },
+  "snyk": true
 }
