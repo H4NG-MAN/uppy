@@ -5,10 +5,14 @@
     "aliasify": "^2.1.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
-    "fs-write-stream-atomic": "^1.0.10"
+    "fs-write-stream-atomic": "^1.0.10",
+    "snyk": "^1.316.1"
   },
   "private": true,
   "scripts": {
-    "start": "node ./serve.js"
-  }
+    "start": "node ./serve.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
