@@ -7,13 +7,17 @@
     "budo": "^11.3.2",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
-    "npm-run-all": "^4.1.2"
+    "npm-run-all": "^4.1.2",
+    "snyk": "^1.316.1"
   },
   "private": true,
   "scripts": {
     "copy": "cp ../../packages/uppy/dist/uppy.min.css .",
     "start": "npm-run-all --serial copy --parallel start:*",
     "start:client": "budo client/main.js:bundle.js -- -t babelify",
-    "start:server": "node server/index.js"
-  }
+    "start:server": "node server/index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
