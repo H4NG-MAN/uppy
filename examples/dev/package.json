@@ -11,10 +11,14 @@
     "babelify": "^10.0.0",
     "es6-promise": "^4.2.8",
     "watchify": "^3.11.0",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.0.0",
+    "snyk": "^1.316.1"
   },
   "private": true,
   "scripts": {
-    "watch:sandbox": "watchify -vd -t [ babelify --cwd ../../ ] -g aliasify index.js -o output/index.js"
-  }
+    "watch:sandbox": "watchify -vd -t [ babelify --cwd ../../ ] -g aliasify index.js -o output/index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
