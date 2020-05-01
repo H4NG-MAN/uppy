@@ -11,11 +11,15 @@
     "babelify": "^10.0.0",
     "budo": "^11.3.2",
     "express": "^4.16.4",
-    "he": "^1.2.0"
+    "he": "^1.2.0",
+    "snyk": "^1.316.1"
   },
   "private": true,
   "scripts": {
     "css": "cp ../../packages/uppy/dist/uppy.min.css .",
-    "start": "npm run css && (node server & budo main.js:bundle.js -- -t babelify -g aliasify & wait)"
-  }
+    "start": "npm run css && (node server & budo main.js:bundle.js -- -t babelify -g aliasify & wait)",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
