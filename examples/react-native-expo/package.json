@@ -14,7 +14,8 @@
     "preact-render-to-string": "^4.1.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-native-svg-uri": "gaboelnuevo/react-native-svg-uri#473e4f958e8846cbd5c69ce5cf59753cd5cea748"
+    "react-native-svg-uri": "gaboelnuevo/react-native-svg-uri#473e4f958e8846cbd5c69ce5cf59753cd5cea748",
+    "snyk": "^1.316.1"
   },
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
@@ -22,6 +23,9 @@
     "android": "expo start --android",
     "eject": "expo eject",
     "ios": "expo start --ios",
-    "start": "expo start"
-  }
+    "start": "expo start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
