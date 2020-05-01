@@ -41,6 +41,12 @@
     "node-notifier": "^5.2.1",
     "postcss-inline-svg": "^3.1.1",
     "prismjs": "^1.15.0",
-    "watchify": "^3.11.0"
-  }
+    "watchify": "^3.11.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
