@@ -2,7 +2,7 @@
   "name": "uploader",
   "version": "1.0.0",
   "dependencies": {
-    "@uppy/companion": "^0.17.3",
+    "@uppy/companion": "^1.13.2",
     "aws-serverless-express": "^3.3.6",
     "body-parser": "^1.18.3",
     "compression": "^1.7.4",
