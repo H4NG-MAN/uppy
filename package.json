@@ -67,7 +67,7 @@
     "@uppy/xhr-upload": "file:packages/@uppy/xhr-upload",
     "uppy": "file:packages/uppy",
     "uppy.io": "file:website",
-    "snyk": "^1.299.0"
+    "snyk": "^1.465.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
