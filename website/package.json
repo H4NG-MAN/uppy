@@ -8,11 +8,11 @@
     "@babel/core": "^7.4.4",
     "@goto-bus-stop/hexo-renderer-postcss": "^2.0.0",
     "aliasify": "^2.1.0",
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^10.0.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.2",
     "chalk": "2.4.2",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.0",
     "drag-drop": "^4.2.0",
     "glob": "^7.1.2",
     "he": "^1.1.1",
@@ -39,7 +39,7 @@
     "mkdirp": "0.5.1",
     "multi-glob": "^1.0.2",
     "node-notifier": "^5.2.1",
-    "postcss-inline-svg": "^3.1.1",
+    "postcss-inline-svg": "^5.0.0",
     "prismjs": "^1.15.0",
     "watchify": "^3.11.0"
   }
