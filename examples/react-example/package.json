@@ -10,7 +10,7 @@
     "@babel/preset-react": "^7.0.0",
     "aliasify": "^2.1.0",
     "babelify": "^10.0.0",
-    "budo": "^11.6.2",
+    "budo": "^11.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
