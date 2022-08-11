@@ -24,7 +24,7 @@
     "@uppy/companion-client": "file:../companion-client",
     "@uppy/provider-views": "file:../provider-views",
     "@uppy/utils": "file:../utils",
-    "preact": "8.2.9"
+    "preact": "8.5.3"
   },
   "peerDependencies": {
     "@uppy/core": "^1.0.0"
