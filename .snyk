@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.25.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -9,3 +9,16 @@ patch:
   'npm:ms:20170412':
     - '@uppy-example/uppy-with-companion > upload-server > express-directory > finalhandler > debug > ms':
         patched: '2020-03-18T10:19:01.539Z'
+  SNYK-JS-LODASH-567746:
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2023-11-27T18:23:20.810Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib >
+          lodash
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2023-11-27T18:23:20.810Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser >
+          @snyk/dep-graph > graphlib > lodash
