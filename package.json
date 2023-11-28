@@ -67,7 +67,7 @@
     "@uppy/xhr-upload": "file:packages/@uppy/xhr-upload",
     "uppy": "file:packages/uppy",
     "uppy.io": "file:website",
-    "snyk": "^1.299.0"
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -237,7 +237,7 @@
     "web:start": "npm-run-all build:lib --parallel watch:css web:watch-examples web:bundle-watch-inject web:watch",
     "web:watch-examples": "cd website && node build-examples.js watch",
     "web:watch": "cd website && touch db.json && ../node_modules/.bin/hexo server",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "npm run snyk-protect"
   },
   "jest": {
